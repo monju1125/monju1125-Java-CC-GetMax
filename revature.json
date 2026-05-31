@@ -1,0 +1,25 @@
+{
+  "type": "java",
+  "testFiles": [
+    {
+      "path": "src/test/java/GetMaxTest.java",
+      "testCases": [
+        {
+          "methodName": "getMaxTest1",
+          "label": "Test finding max in a small, sorted array",
+          "description": "Verifies that the max value '4' is correctly identified in the array {0, 1, 2, 3, 4}."
+        },
+        {
+          "methodName": "getMaxTest2",
+          "label": "Test finding max in a mixed order array",
+          "description": "Verifies that the max value '10' is correctly identified in the array {9, 8, 10, 3, 4}."
+        },
+        {
+          "methodName": "getMaxTest3",
+          "label": "Test finding max in an array of negative integers",
+          "description": "Verifies that the largest negative value, '-45', is correctly identified in the array {-100, -383, -45, -901, -76}."
+        }
+      ]
+    }
+  ]
+}
