@@ -1,3 +1,5 @@
+import org.eclipse.jetty.jndi.java.javaNameParser;
+
 public class GetMax {
     /**
      * This method should return the max value of arr (the largest int.)
@@ -7,6 +9,14 @@ public class GetMax {
      * @return the largest value in arr.
      */
     public int max(int[] arr){
-        return -1;
+        for(int i =0; i < arr.length-1; i++){
+                if (arr[i] > arr[i+1]) {
+                    int temp = arr[i+1];
+                    arr[i+1] =  arr[i];
+                    arr[i] = temp;
+                }
+            }
+        
+        return arr[arr.length-1];
     }
 }
